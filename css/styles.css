@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #333;
+}
+.tabs-box {
+  height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tabs {
+  display: flex;
+  position: relative;
+}
+.tab-item {
+  padding: 10px 20px 15px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background-color: #03738c;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.tab-item:hover {
+  opacity: 1;
+}
+.tab-item.active {
+  opacity: 1;
+}
+
+.tabs .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  border-radius: 15px;
+  background-color: #049dbf;
+  transition: all 0.2s ease;
+}
+.tab-icon {
+  font-size: 24px;
+  width: 32px;
+  position: relative;
+  top: 2px;
+}
+.tab-icon-1 {
+  color: #e34c26;
+}
+.tab-icon-2 {
+  color: #12e3f3;
+}
+.tab-icon-3 {
+  color: #f0db4f;
+}
+.tab-icon-4 {
+  color: #61dbfb;
+}
+.tab-content {
+  padding: 28px 0;
+  height: 250px;
+}
+.tab-list {
+  color: white;
+  display: none;
+}
+.tab-list.active {
+  display: block;
+}
+.tab-list h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
